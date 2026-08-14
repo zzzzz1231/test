@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "configure linux X64",
+            "type": "shell",
+            "command": "cd build && cmake .. -DPLATFORM=X64 && make -j6",
+            "problemMatcher": [],
+            "dependsOn": [
+                "mkdir bulild"
+            ]
+        },
+        {
+            "label": "configure linux ARM64/aarch64",
+            "type": "shell",
+            "command": "cd build && cmake .. -DPLATFORM=ARM64 && make -j6",
+            "problemMatcher": [],
+            "dependsOn": [
+                "mkdir bulild"
+            ]
+        },
+        {
+            "label": "mkdir bulild",
+            "type": "shell",
+            "command": "mkdir -p build"
+        },
+        {
+            "label": "run ApiDllTest",
+            "type": "shell",
+            "command": "cd build/Examples/Sample/ApiDllTest && ./ApiDllTest",
+            "dependsOn": [
+                "configure linux ARM64/aarch64"
+            ],
+            "problemMatcher": [],
+        }
+        ,
+        {
+            "label": "clean ApiDllTest",
+            "type": "shell",
+            "command": "cd build && make clean",
+            "problemMatcher": [],
+        }
+    ]
+    
+}

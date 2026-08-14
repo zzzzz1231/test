@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SampleApiDllCSharpWinFormDotNET7.0": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\Program Files\\SICK_GCN\\Ranger3Studio\\SICK_GENICAM_SDK_FOLDER\\SICK\\dll\\Debug"
+    }
+  }
+}

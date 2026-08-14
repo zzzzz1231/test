@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo_Trispector_Console", "DEMO\Demo_Trispector_Console\Demo_Trispector_Console.vcxproj", "{595574B6-535C-4AD0-A327-752ABFDF51A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{473D2772-784A-4D29-8C3F-FECE73F14150} = {473D2772-784A-4D29-8C3F-FECE73F14150}
+		{E89C1CBC-F2F9-488B-8B65-CE74FC5312E1} = {E89C1CBC-F2F9-488B-8B65-CE74FC5312E1}
+		{D0137AEA-59FB-419F-B51A-1181A5EA359B} = {D0137AEA-59FB-419F-B51A-1181A5EA359B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleApiDll", "DLL\SampleApiDll\SampleApiDll.vcxproj", "{E89C1CBC-F2F9-488B-8B65-CE74FC5312E1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenIRanger", "DLL\GenIRanger\GenIRanger.vcxproj", "{D0137AEA-59FB-419F-B51A-1181A5EA359B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleCalibrationWrapper", "DLL\CalibrationWrapper\SampleCalibrationWrapper.vcxproj", "{473D2772-784A-4D29-8C3F-FECE73F14150}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{595574B6-535C-4AD0-A327-752ABFDF51A2}.Debug|x64.ActiveCfg = Debug|x64
+		{595574B6-535C-4AD0-A327-752ABFDF51A2}.Debug|x64.Build.0 = Debug|x64
+		{595574B6-535C-4AD0-A327-752ABFDF51A2}.Release|x64.ActiveCfg = Release|x64
+		{595574B6-535C-4AD0-A327-752ABFDF51A2}.Release|x64.Build.0 = Release|x64
+		{E89C1CBC-F2F9-488B-8B65-CE74FC5312E1}.Debug|x64.ActiveCfg = Debug|x64
+		{E89C1CBC-F2F9-488B-8B65-CE74FC5312E1}.Debug|x64.Build.0 = Debug|x64
+		{E89C1CBC-F2F9-488B-8B65-CE74FC5312E1}.Release|x64.ActiveCfg = Release|x64
+		{E89C1CBC-F2F9-488B-8B65-CE74FC5312E1}.Release|x64.Build.0 = Release|x64
+		{D0137AEA-59FB-419F-B51A-1181A5EA359B}.Debug|x64.ActiveCfg = Debug|x64
+		{D0137AEA-59FB-419F-B51A-1181A5EA359B}.Debug|x64.Build.0 = Debug|x64
+		{D0137AEA-59FB-419F-B51A-1181A5EA359B}.Release|x64.ActiveCfg = Release|x64
+		{D0137AEA-59FB-419F-B51A-1181A5EA359B}.Release|x64.Build.0 = Release|x64
+		{473D2772-784A-4D29-8C3F-FECE73F14150}.Debug|x64.ActiveCfg = Debug|x64
+		{473D2772-784A-4D29-8C3F-FECE73F14150}.Debug|x64.Build.0 = Debug|x64
+		{473D2772-784A-4D29-8C3F-FECE73F14150}.Release|x64.ActiveCfg = Release|x64
+		{473D2772-784A-4D29-8C3F-FECE73F14150}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0769545-8CB8-4A99-BFC9-AE7FC12128C5}
+	EndGlobalSection
+EndGlobal

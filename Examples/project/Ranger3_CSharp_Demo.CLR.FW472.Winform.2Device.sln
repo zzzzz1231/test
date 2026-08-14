@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApiDllCSharpWinForm_2Dev", "DEMO\Demo_Ranger3_CSharp_2Device\SampleApiDllCSharpWinForm_2Dev.csproj", "{22A3D12F-0C35-4D60-BDE3-885078234B7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22A3D12F-0C35-4D60-BDE3-885078234B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A3D12F-0C35-4D60-BDE3-885078234B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A3D12F-0C35-4D60-BDE3-885078234B7D}.Debug|x64.ActiveCfg = Debug|x64
+		{22A3D12F-0C35-4D60-BDE3-885078234B7D}.Debug|x64.Build.0 = Debug|x64
+		{22A3D12F-0C35-4D60-BDE3-885078234B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A3D12F-0C35-4D60-BDE3-885078234B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A3D12F-0C35-4D60-BDE3-885078234B7D}.Release|x64.ActiveCfg = Release|x64
+		{22A3D12F-0C35-4D60-BDE3-885078234B7D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41AD745A-338E-4978-9CE4-BEF6CC16098B}
+	EndGlobalSection
+EndGlobal

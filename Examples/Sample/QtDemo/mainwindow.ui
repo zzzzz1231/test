@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>987</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Ranger3Studio</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ICON_R3.png</normaloff>ICON_R3.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="50,1,100">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="5,50,1,5,0,100">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetNoConstraint</enum>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Device List</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QListView" name="listView_Device">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Parameters</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_setParam">
+          <property name="text">
+           <string>Set Parameters</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTreeView" name="treeView_Parameters">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,100,0,1,50">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetNoConstraint</enum>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_viewer">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Viewer(Range)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_Image">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Image Area</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Log</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEdit_Log">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>987</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile_device">
+    <property name="title">
+     <string>Device</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionScan_Device"/>
+    <addaction name="separator"/>
+    <addaction name="actionOperation"/>
+    <addaction name="actionStart2"/>
+    <addaction name="separator"/>
+    <addaction name="actionExport_Parameters"/>
+    <addaction name="actionImport_Parameter"/>
+    <addaction name="separator"/>
+    <addaction name="actionLoad_Calibration_File"/>
+   </widget>
+   <widget class="QMenu" name="menuFile_2">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_Image"/>
+    <addaction name="actionSave_Image"/>
+    <addaction name="separator"/>
+    <addaction name="actionCalibrate_image"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionVersion"/>
+   </widget>
+   <widget class="QMenu" name="menuViewer">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="title">
+     <string>Viewer</string>
+    </property>
+    <addaction name="actionPlaceHolder0"/>
+    <addaction name="actionSensor"/>
+    <addaction name="actionRange"/>
+    <addaction name="actionReflectance"/>
+    <addaction name="actionScatter"/>
+    <addaction name="actionPlaceHolder1"/>
+    <addaction name="actionChunkData_Mark"/>
+    <addaction name="actionCalibrated_Range"/>
+    <addaction name="actionCalibrated_Reflectance"/>
+    <addaction name="actionPlaceHolder2"/>
+    <addaction name="actionCalibrated_Scatter8"/>
+    <addaction name="separator"/>
+    <addaction name="action3D"/>
+   </widget>
+   <addaction name="menuFile_device"/>
+   <addaction name="menuFile_2"/>
+   <addaction name="menuViewer"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionScan_Device">
+   <property name="text">
+    <string>Scan Device</string>
+   </property>
+  </action>
+  <action name="actionOperation">
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </action>
+  <action name="actionExport_Parameters">
+   <property name="text">
+    <string>Export Parameters</string>
+   </property>
+  </action>
+  <action name="actionImport_Parameter">
+   <property name="text">
+    <string>Import Parameter</string>
+   </property>
+  </action>
+  <action name="actionLoad_Calibration_File">
+   <property name="text">
+    <string>Load Calibration File</string>
+   </property>
+  </action>
+  <action name="actionLoad_Image">
+   <property name="text">
+    <string>Load Image</string>
+   </property>
+  </action>
+  <action name="actionSave_Image">
+   <property name="text">
+    <string>Save Image</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_image">
+   <property name="text">
+    <string>Calibrate Image</string>
+   </property>
+  </action>
+  <action name="actionRange">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string notr="true">Range</string>
+   </property>
+  </action>
+  <action name="actionReflectance">
+   <property name="text">
+    <string>Reflectance</string>
+   </property>
+  </action>
+  <action name="action3D">
+   <property name="text">
+    <string>3D</string>
+   </property>
+  </action>
+  <action name="actionVersion">
+   <property name="text">
+    <string>Version</string>
+   </property>
+  </action>
+  <action name="actionScatter">
+   <property name="text">
+    <string>Scatter8</string>
+   </property>
+  </action>
+  <action name="actionStart2">
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="actionSensor">
+   <property name="text">
+    <string>Sensor</string>
+   </property>
+  </action>
+  <action name="actionPlaceHolder0">
+   <property name="text">
+    <string>*NULL</string>
+   </property>
+  </action>
+  <action name="actionPlaceHolder1">
+   <property name="text">
+    <string>*NULL</string>
+   </property>
+  </action>
+  <action name="actionChunkData_Mark">
+   <property name="text">
+    <string>ChunkData/Mark</string>
+   </property>
+  </action>
+  <action name="actionPlaceHolder2">
+   <property name="text">
+    <string>*NULL</string>
+   </property>
+  </action>
+  <action name="actionCalibrated_Range">
+   <property name="text">
+    <string>Calibrated Range</string>
+   </property>
+  </action>
+  <action name="actionCalibrated_Reflectance">
+   <property name="text">
+    <string>Calibrated Reflectance</string>
+   </property>
+  </action>
+  <action name="actionCalibrated_Scatter8">
+   <property name="text">
+    <string>Calibrated Scatter8</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

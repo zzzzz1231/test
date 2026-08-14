@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <LoggerRunSettings>
+    <Loggers>
+      <!-- JUnit XML -->
+      <Logger friendlyName="junit" enabled="true">
+        <Configuration>
+          <LogFilePath>result.NetFW472.xml</LogFilePath>
+        </Configuration>
+      </Logger>
+      <!-- 同时保留 trx -->
+      <Logger friendlyName="trx" enabled="true"/>
+    </Loggers>
+  </LoggerRunSettings>
+</RunSettings>

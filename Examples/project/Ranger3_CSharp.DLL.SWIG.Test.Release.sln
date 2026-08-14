@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwigRanger3.NetFW472.xUnitTest.Release", "DLL\SwigRanger3.NetFW472.xUnitTest.Release\SwigRanger3.NetFW472.xUnitTest.Release.csproj", "{CA0CB460-0129-4195-B8BC-766AA27551EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwigRanger3.Net7.xUnitTest.Release", "DLL\SwigRanger3.Net7.xUnitTest.Release\SwigRanger3.Net7.xUnitTest.Release.csproj", "{E8B29082-CF3F-4428-9ABB-2FDF43E31486}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA0CB460-0129-4195-B8BC-766AA27551EB}.Release|x64.ActiveCfg = Release|Any CPU
+		{CA0CB460-0129-4195-B8BC-766AA27551EB}.Release|x64.Build.0 = Release|Any CPU
+		{E8B29082-CF3F-4428-9ABB-2FDF43E31486}.Release|x64.ActiveCfg = Release|Any CPU
+		{E8B29082-CF3F-4428-9ABB-2FDF43E31486}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBA1D989-315B-4E66-9561-FCEED23B065C}
+	EndGlobalSection
+EndGlobal

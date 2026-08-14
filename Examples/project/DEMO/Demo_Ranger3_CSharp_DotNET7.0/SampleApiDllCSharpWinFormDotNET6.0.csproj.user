@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="X64_Only\frmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="X64_Only\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="X64_Only\OperaCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="X64_Only\OperaImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="X64_Only\OperaUnitTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

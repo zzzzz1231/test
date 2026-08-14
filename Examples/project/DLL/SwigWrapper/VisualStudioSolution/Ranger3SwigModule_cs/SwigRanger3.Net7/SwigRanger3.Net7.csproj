@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <BaseOutputPath>E:\gitlab\GenICam-SDK\Examples\project\</BaseOutputPath>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Ranger3.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SwigRanger3.NetF472\code\CalibInfo.cs" Link="CalibInfo.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\CameraShared.cs" Link="CameraShared.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\CamType.cs" Link="CamType.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\CAM_STATUS.cs" Link="CAM_STATUS.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\DataNames.cs" Link="DataNames.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\DataNamesVector.cs" Link="DataNamesVector.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\DeviceConnectionMap.cs" Link="DeviceConnectionMap.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\genistreamtraits_.cs" Link="genistreamtraits_.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\HDR_missingDataMode.cs" Link="HDR_missingDataMode.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\ImgInfo.cs" Link="ImgInfo.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\ImgT.cs" Link="ImgT.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\RangeInfo.cs" Link="RangeInfo.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\Ranger3.cs" Link="Ranger3.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\RectMethod.cs" Link="RectMethod.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SensoInfo.cs" Link="SensoInfo.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\StringVector.cs" Link="StringVector.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SwigRanger3.cs" Link="SwigRanger3.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SwigRanger3PINVOKE.cs" Link="SwigRanger3PINVOKE.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_CAM_STATUS.cs" Link="SWIGTYPE_p_CAM_STATUS.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_deviceList.cs" Link="SWIGTYPE_p_deviceList.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_f_p_SickCam__ImgT_p_void__void.cs" Link="SWIGTYPE_p_f_p_SickCam__ImgT_p_void__void.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_geniranger__RangeAxis.cs" Link="SWIGTYPE_p_geniranger__RangeAxis.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_int.cs" Link="SWIGTYPE_p_int.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_SPtrT_CustomerLog_t.cs" Link="SWIGTYPE_p_SPtrT_CustomerLog_t.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_std__functionT_void_fstd__string_p_std__string_p_std__string_p_std__string_p_void_pF_t.cs" Link="SWIGTYPE_p_std__functionT_void_fstd__string_p_std__string_p_std__string_p_std__string_p_void_pF_t.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_std__mapT_SickCam__DataNames_void_p_std__lessT_SickCam__DataNames_t_t.cs" Link="SWIGTYPE_p_std__mapT_SickCam__DataNames_void_p_std__lessT_SickCam__DataNames_t_t.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_std__shared_ptrT_SickCam__DeviceConnection_t.cs" Link="SWIGTYPE_p_std__shared_ptrT_SickCam__DeviceConnection_t.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_std__string.cs" Link="SWIGTYPE_p_std__string.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_std__vectorT_SickCam__ImgT_t.cs" Link="SWIGTYPE_p_std__vectorT_SickCam__ImgT_t.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\SWIGTYPE_p_VecT_Ranger3LineMetadata_t.cs" Link="SWIGTYPE_p_VecT_Ranger3LineMetadata_t.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\ThreadPool.cs" Link="ThreadPool.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\Trispector.cs" Link="Trispector.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\UnsignedCharVector.cs" Link="UnsignedCharVector.cs" />
+    <Compile Include="..\SwigRanger3.NetF472\code\VER.cs" Link="VER.cs" />
+  </ItemGroup>
+
+</Project>

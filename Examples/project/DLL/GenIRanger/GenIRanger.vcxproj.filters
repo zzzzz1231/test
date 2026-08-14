@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\Region.cpp">
+      <Filter>private\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\GenTlBackedFrame.cpp">
+      <Filter>private\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\Frame.cpp">
+      <Filter>private\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\Component.cpp">
+      <Filter>private\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\BasicTypes.cpp">
+      <Filter>private\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Buffer.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\BufferPart.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\CApi.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\DataStream.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Device.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\DeviceInfo.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Event.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Exception.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Interface.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\InterfaceInfo.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\NewBufferEvent.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Port.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Producer.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Tracing.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\TransportLayer.cpp">
+      <Filter>private\gentlcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\ConfigReader.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\BufferManager.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\ChunkAdapter.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\ConfigWriter.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\ConnectedDevice.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\DatAndXmlFiles.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\DeviceDiscovery.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\EnumSelectorEntries.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\Exceptions.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\GenIUtil.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeExporter.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeImporter.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeTraverser.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeUtil.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\XmlElement.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\SaveBuffer.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\FastMetadataExtractor.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\FileOperation.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\FrameGrabber.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\GenIRanger.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\Ip4Address.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\MacAddress.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeHelpers.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeMap.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\PixelFormat.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\SelectorSnapshot.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\SharedInterfaces.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\DeviceLogWriter.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\Crc32.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\UserSet.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\Aoi.h">
+      <Filter>public\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\Region.h">
+      <Filter>public\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\Frame.h">
+      <Filter>public\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\Component.h">
+      <Filter>public\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\BasicTypes.h">
+      <Filter>public\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\frame\GenTlBackedFrame.h">
+      <Filter>private\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\gentlcpp\GetString.h">
+      <Filter>private\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\TransportLayer.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Tracing.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Producer.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Port.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\NewBufferEvent.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Module.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\InterfaceInfo.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Interface.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Exception.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Event.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\DeviceInfo.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Device.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\DataStream.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\CApi.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\BufferPart.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Buffer.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\BasicTypes.h">
+      <Filter>public\gentlcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Avoid.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\ConfigReader.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\BufferManager.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\ChunkAdapter.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\ConnectedDevice.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\DatAndXmlFiles.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\DeviceDiscovery.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\EnumSelectorEntries.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Exceptions.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\GenIUtil.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\NodeExporter.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\NodeImporter.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\NodeTraverser.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\NodeUtil.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\XmlElement.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\SaveBuffer.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\SharedInterfaces.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Ranger3LineMetadata.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\PixelFormat.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\NodeMap.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\NodeHelpers.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\MacAddress.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Ip4Address.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\GenIRanger.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\FrameGrabber.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\FileOperation.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\FastMetadataExtractor.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\ConfigWriter.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\CustomCommands.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\GenIRangerDataTypes.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\SelectorSnapshot.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\DeviceLogWriter.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Crc32.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\UserSet.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\ScopedNodeValue.h">
+      <Filter>public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="public">
+      <UniqueIdentifier>{46414d86-5dfa-44d3-a017-7c2f97243eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private">
+      <UniqueIdentifier>{c7da4f99-9ee8-41a5-94dc-36bb34eaaa8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\frame">
+      <UniqueIdentifier>{529f6d26-79c4-4023-8d8f-459f25384ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\gentlcpp">
+      <UniqueIdentifier>{44e47173-493e-4d43-8ae8-1949f9ffd6a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public\frame">
+      <UniqueIdentifier>{0806f554-7de8-4d64-a272-c3d737c50df5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public\gentlcpp">
+      <UniqueIdentifier>{967d0c5c-1996-419e-b070-ad817415f717}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

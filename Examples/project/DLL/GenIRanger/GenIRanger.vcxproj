@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D0137AEA-59FB-419F-B51A-1181A5EA359B}</ProjectGuid>
+    <RootNamespace>GenIRanger</RootNamespace>
+    <ProjectName>GenIRanger</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\VisualStudioPropertyPages\GenIRanger\GenIRanger_generate_DLL.props" />
+    <Import Project="..\..\VisualStudioPropertyPages\GenICam\GenICam310.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\VisualStudioPropertyPages\GenIRanger\GenIRanger_generate_DLL.props" />
+    <Import Project="..\..\VisualStudioPropertyPages\GenICam\GenICam310.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+    <CopyCppRuntimeToOutputDir>false</CopyCppRuntimeToOutputDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GENICAM_NO_AUTO_IMPLIB;GENIRANGER_LINKAGE_SHARED_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4275</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo F | xcopy "$(SolutionDir)$(Platform)\$(Configuration)\GenIRanger.dll"  "$(SICK_GENICAM_SDK_DLL_d)\GenIRanger.dll" /y
+echo F | xcopy "$(SolutionDir)$(Platform)\$(Configuration)\GenIRanger.lib"  "$(SICK_GENICAM_SDK)\SICK\lib\Debug\GenIRanger.lib" /y</Command>
+    </PostBuildEvent>
+    <Manifest>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Manifest>
+    <Manifest>
+      <VerboseOutput>false</VerboseOutput>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GENICAM_NO_AUTO_IMPLIB;GENIRANGER_LINKAGE_SHARED_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4275</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>echo F | xcopy "$(SolutionDir)$(Platform)\$(Configuration)\GenIRanger.dll"  "$(SICK_GENICAM_SDK_DLL)\GenIRanger.dll" /y
+echo F | xcopy "$(SolutionDir)$(Platform)\$(Configuration)\GenIRanger.lib"  "$(SICK_GENICAM_SDK)\SICK\lib\Release\GenIRanger.lib" /y</Command>
+    </PostBuildEvent>
+    <Manifest>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+    </Manifest>
+    <Manifest>
+      <VerboseOutput>false</VerboseOutput>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\ConfigReader.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\ConfigWriter.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\DatAndXmlFiles.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\EnumSelectorEntries.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\frame\GenTlBackedFrame.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\GenIUtil.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\gentlcpp\GetString.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\NodeExporter.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\NodeImporter.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\NodeTraverser.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\NodeUtil.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\SaveBuffer.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\SelectorSnapshot.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\private\XmlElement.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\ScopedNodeValue.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\UserSet.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\ChunkAdapter.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Avoid.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Crc32.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\CustomCommands.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\Aoi.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\FastMetadataExtractor.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\BasicTypes.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\Component.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\Frame.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\frame\Region.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\GenIRangerDataTypes.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Ip4Address.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\BufferManager.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\ConnectedDevice.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\DeviceDiscovery.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\DeviceLogWriter.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Exceptions.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\FileOperation.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\FrameGrabber.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\GenIRanger.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\BasicTypes.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Buffer.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\BufferPart.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\CApi.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\DataStream.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Device.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\DeviceInfo.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Event.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Exception.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Interface.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\InterfaceInfo.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Module.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\NewBufferEvent.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Port.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Producer.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\Tracing.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\gentlcpp\TransportLayer.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\MacAddress.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\NodeHelpers.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\NodeMap.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\PixelFormat.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\Ranger3LineMetadata.h" />
+    <ClInclude Include="..\..\..\Sample\GenIRanger\public\SharedInterfaces.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\UserSet.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\ChunkAdapter.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\Crc32.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\EnumSelectorEntries.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\FastMetadataExtractor.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\BasicTypes.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\Component.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\Frame.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\GenTlBackedFrame.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\frame\Region.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\Ip4Address.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\BufferManager.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\ConnectedDevice.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\DatAndXmlFiles.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\DeviceDiscovery.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\FrameGrabber.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Buffer.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\BufferPart.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\CApi.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\DataStream.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Device.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\DeviceInfo.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Event.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Exception.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Interface.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\InterfaceInfo.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\NewBufferEvent.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Port.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Producer.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\Tracing.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\gentlcpp\TransportLayer.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\MacAddress.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeHelpers.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeMap.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\PixelFormat.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\SaveBuffer.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\ConfigReader.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\ConfigWriter.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\DeviceLogWriter.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\Exceptions.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\FileOperation.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\GenIRanger.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\GenIUtil.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeExporter.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeImporter.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeTraverser.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\NodeUtil.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\SelectorSnapshot.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\SharedInterfaces.cpp" />
+    <ClCompile Include="..\..\..\Sample\GenIRanger\private\XmlElement.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
