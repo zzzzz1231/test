@@ -15,7 +15,7 @@ fi
 
 mkdir buildRanger3SDK_Arm64
 cd buildRanger3SDK_Arm64
-cmake .. -DPLATFORM=ARM64 -DUSE_PC_CALIBRATION=TRUE -DUSE_OPENCV=TRUE
+cmake .. -DPLATFORM=ARM64 -DUSE_PC_CALIBRATION=FALSE -DUSE_OPENCV=TRUE
 make -j$(nproc)
 
 cp Examples/Sample/GenIRanger_linux/GenIRanger/libGenIRanger.so /usr/local/lib/
