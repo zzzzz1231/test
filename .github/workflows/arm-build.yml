@@ -1,1 +1,37 @@
+name: ARM64 SDK Build
 
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+jobs:
+  build-arm:
+    runs-on: ubuntu-24.04-arm
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential cmake libopencv-dev
+      
+      - name: Fix line endings and run build
+        run: |
+          # 防止 Windows 换行符导致脚本执行错误
+          sed -i 's/\r$//' build.sh
+          chmod +x build.sh
+          sudo ./build.sh
+      
+      - name: Verify build outputs
+        run: |
+          echo "===== Architecture ====="
+          uname -m
+          echo "===== Compiled libraries ====="
+          find buildRanger3SDK_Arm64 -name "*.so" -type f | head -20
+          echo "===== Binary file types ====="
+          find buildRanger3SDK_Arm64 -name "*.so" -type f | head -5 | xargs -I {} file {}
+          echo "===== Test program ====="
+          file buildRanger3SDK_Arm64/Examples/Sample/ApiDllTest/ApiDllTest 2>/dev/null || echo "Test binary not found"
