@@ -21,7 +21,7 @@ jobs:
       - name: Fix line endings and run build
         run: |
           # 防止 Windows 换行符导致脚本执行错误
-          sed -i 's/\r$//' build.sh
+          sed -i 's/\r$//' buildAndRun_ARM64.sh
           chmod +x buildAndRun_ARM64.sh
           sudo ./buildAndRun_ARM64.sh
       
